@@ -67,8 +67,8 @@ function Navbar() {
       cursor: 'pointer',
       color: theme.primary,
       position: 'absolute',
-      right: 40,
-      top: 40,
+      right: 30,
+      top: 20,
       transition: 'color 0.2s',
       '&:hover': {
         color: theme.tertiary,
@@ -79,12 +79,12 @@ function Navbar() {
       },
     },
     drawerItem: {
-      margin: '2rem auto',
+      margin: '1.5rem auto',
       borderRadius: '78.8418px',
       background: theme.secondary,
       color: theme.primary,
       width: '85%',
-      height: '60px',
+      height: '50px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-evenly',
@@ -106,14 +106,14 @@ function Navbar() {
     drawerLinks: {
       fontFamily: 'var(--primaryFont)',
       width: '50%',
-      fontSize: '1.3rem',
+      fontSize: '1rem',
       fontWeight: 600,
       [t.breakpoints.down('sm')]: {
         fontSize: '1.125rem',
       },
     },
     drawerIcon: {
-      fontSize: '1.6rem',
+      fontSize: '1.2rem',
       [t.breakpoints.down('sm')]: {
         fontSize: '1.385rem',
       },
@@ -185,10 +185,24 @@ function Navbar() {
             </Fade>
 
             <Fade left>
-              <NavLink to='/#services' smooth={true} spy='true' duration={2000}>
+              <NavLink to='/#skill' smooth={true} spy='true' duration={2000}>
                 <div className={classes.drawerItem}>
-                  <BsFillGearFill className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Hobbies</span>
+                  <HiDocumentText className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Skills</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+            <Fade left>
+              <NavLink
+                to='/#experience'
+                smooth={true}
+                spy='true'
+                duration={2000}
+              >
+                <div className={classes.drawerItem}>
+                  <HiDocumentText className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Experience</span>
                 </div>
               </NavLink>
             </Fade>
@@ -198,6 +212,15 @@ function Navbar() {
                 <div className={classes.drawerItem}>
                   <FaFolderOpen className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Projects</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+            <Fade left>
+              <NavLink to='/#services' smooth={true} spy='true' duration={2000}>
+                <div className={classes.drawerItem}>
+                  <BsFillGearFill className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Hobbies</span>
                 </div>
               </NavLink>
             </Fade>

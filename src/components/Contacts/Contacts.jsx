@@ -147,10 +147,10 @@ function Contacts() {
 
         emailjs
           .send(
-            'service_7mwrpfp',
-            'template_5jlde4m',
+            'service_etyv5t5',
+            'template_3g7n1cg',
             responseData,
-            'user_BXHJ6DmhAdrMyslj668Q1'
+            '84Zc3jifxmB9r2Fl9'
           )
           .then(
             (response) => {

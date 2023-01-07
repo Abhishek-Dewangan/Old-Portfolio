@@ -1,7 +1,7 @@
 export const socialsData = {
-  github: 'https://github.com/callmeabhi1997',
+  github: 'https://github.com/Abhishek-Dewangan',
   linkedIn: 'https://www.linkedin.com/in/abhishek-dewangan-319345218/',
-  codepen: 'https://codepen.io/callmeabhi1997',
-  reddit: 'https://www.reddit.com/user/callmeabhi1997',
-  stackOverflow: 'https://stackoverflow.com/users/19272783/abhishek-dewangan',
+  medium: 'https://medium.com/@callmeabhi1997',
+  hackerrank: 'https://www.hackerrank.com/callmeabhi1997',
+  leetcode: 'https://leetcode.com/callmeabhi1997/',
 };

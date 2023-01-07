@@ -1,20 +1,19 @@
-import React, { useContext } from 'react';
+import React, {useContext} from 'react';
 import Typewriter from 'typewriter-effect';
 
-import { Button } from '@material-ui/core';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
-import { makeStyles } from '@material-ui/core/styles';
+import {Button} from '@material-ui/core';
+import {NavHashLink as NavLink} from 'react-router-hash-link';
+import {makeStyles} from '@material-ui/core/styles';
 
 import './Landing.css';
-import { ThemeContext } from '../../contexts/ThemeContext';
-import { headerData } from '../../data/headerData';
-import { socialsData } from '../../data/socialsData';
+import {ThemeContext} from '../../contexts/ThemeContext';
+import {headerData} from '../../data/headerData';
+import {socialsData} from '../../data/socialsData';
 
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import resume from '../../assets/pdf/Resume.pdf';
+import {FaLinkedin, FaGithub} from 'react-icons/fa';
 
 function Landing() {
-  const { theme, drawerOpen } = useContext(ThemeContext);
+  const {theme, drawerOpen} = useContext(ThemeContext);
 
   const useStyles = makeStyles((t) => ({
     resumeBtn: {
@@ -69,16 +68,18 @@ function Landing() {
       <div className='landing--container col-12'>
         <div
           className='landing--container-left'
-          style={{ backgroundColor: theme.primary }}>
+          style={{backgroundColor: theme.primary}}
+        >
           <div className='lcl--content'>
             {socialsData.linkedIn && (
               <a
                 href='https://www.linkedin.com/in/abhishek-dewangan-319345218/'
                 target='_blank'
-                rel='noreferrer'>
+                rel='noreferrer'
+              >
                 <FaLinkedin
                   className='landing--social'
-                  style={{ color: theme.secondary }}
+                  style={{color: theme.secondary}}
                 />
               </a>
             )}
@@ -86,10 +87,11 @@ function Landing() {
               <a
                 href='https://github.com/Abhishek-Dewangan'
                 target='_blank'
-                rel='noreferrer'>
+                rel='noreferrer'
+              >
                 <FaGithub
                   className='landing--social'
-                  style={{ color: theme.secondary }}
+                  style={{color: theme.secondary}}
                 />
               </a>
             )}
@@ -121,12 +123,14 @@ function Landing() {
         />
         <div
           className='landing--container-right col-4'
-          style={{ backgroundColor: theme.secondary }}>
-          <div className='lcr--content' style={{ color: theme.tertiary }}>
+          style={{backgroundColor: theme.secondary}}
+        >
+          <div className='lcr--content' style={{color: theme.tertiary}}>
             {/* <h6 style={{textAlign:"center",marginTop:"20%",color:"transparent"}} >{headerData.title}</h6> */}
             <div
               className='col-12'
-              style={{ textAlign: 'center', marginTop: '20%' }}>
+              style={{textAlign: 'center', marginTop: '20%'}}
+            >
               {' '}
               <img
                 src='https://raw.githubusercontent.com/tal-zvon/tal-zvon/main/assets/Hand_Wave.gif'
@@ -136,10 +140,11 @@ function Landing() {
             </div>
             <h1
               className='aimee'
-              style={{ textAlign: 'center', fontSize: '33px' }}>
+              style={{textAlign: 'center', fontSize: '33px'}}
+            >
               ABHISHEK DEWANGAN
             </h1>
-            <div style={{ textAlign: 'center' }}>
+            <div style={{textAlign: 'center'}}>
               <h3>
                 I am a
                 <Typewriter
@@ -164,24 +169,24 @@ function Landing() {
                 width: '70%',
                 marginBottom: '10%',
               }}
-              className='lcr-buttonContainer'>
-              <div style={{ marginBottom: '30px' }}>
-                {headerData.resumePdf && (
-                  <a
-                    href={resume}
-                    download='resume'
-                    target='_blank'
-                    rel='noreferrer'>
-                    <Button className={classes.resumeBtn}>Download CV</Button>
-                  </a>
-                )}
+              className='lcr-buttonContainer'
+            >
+              <div style={{marginBottom: '30px'}}>
+                <a
+                  href='https://drive.google.com/file/d/10yAXi51-349ZbNbiQ-8df4mjTM25JHfH/view?usp=sharing'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <Button className={classes.resumeBtn}>Download CV</Button>
+                </a>
               </div>
-              <div style={{ marginBottom: '30px' }}>
+              <div style={{marginBottom: '30px'}}>
                 <NavLink
                   to='/#contacts'
                   smooth={true}
                   spy='true'
-                  duration={2000}>
+                  duration={2000}
+                >
                   <Button className={classes.contactBtn}>Contact</Button>
                 </NavLink>
               </div>

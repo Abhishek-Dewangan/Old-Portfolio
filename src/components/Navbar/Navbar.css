@@ -9,6 +9,13 @@
     width: 100%;
 }
 
+#icon{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0.9em;
+}
+
 .navbar--container {
     display: flex;
     align-items: center;

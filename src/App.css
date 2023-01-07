@@ -3,3 +3,6 @@
   /* --primaryFont: 'Montserrat', sans-serif; */
   /* --primaryFont: 'Raleway', sans-serif; */
 }
+a {
+  text-decoration: none;
+}

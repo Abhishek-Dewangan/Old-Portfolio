@@ -39,7 +39,7 @@ export const projectsData = [
     logos:
       'HTML | CSS | JavaScript | React | Redux | MongoDB | NodeJS | Express| Chakra-UI | Swiper',
     code: 'https://github.com/Abhishek-Dewangan/Sugar-Cosmetic-Clone',
-    demo: 'https://sugarcosmeticnem201.netlify.app/',
+    demo: 'https://sugar-cosmatics.netlify.app/',
     image: sugarcosmetic,
   },
   {
@@ -73,7 +73,7 @@ export const projectsData = [
     logos:
       'HTML | CSS | JavaScript | React | MongoDB | NodeJS | Express| Chakra-UI',
     code: 'https://github.com/Abhishek-Dewangan/My-Hours-Clone',
-    demo: 'https://wonderful-dasik-3cd912.netlify.app/',
+    demo: 'https://my-hours-clone.netlify.app/',
     image: myhours,
   },
 ];
